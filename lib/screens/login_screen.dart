@@ -2,8 +2,6 @@ import 'package:den_ecommerce/core/constant/den_theme.dart';
 import 'package:den_ecommerce/widgets/formWidget/customButton.dart';
 import 'package:den_ecommerce/widgets/formWidget/customTextField.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class LoginScreen extends StatelessWidget {
   LoginScreen({super.key});
@@ -63,18 +61,18 @@ class LoginScreen extends StatelessWidget {
                     ),
                     CustomButton(),
                     SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.15,
+                      height: MediaQuery.of(context).size.height * 0.2,
                     ),
                     Align(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            "Don't have an account",
+                            "Don't have an account ?",
                             style: DenTheme.textLabel,
                           ),
                           SizedBox(
-                            width: 4,
+                            width: MediaQuery.of(context).size.width * 0.01,
                           ),
                           GestureDetector(
                             onTap: () {},
